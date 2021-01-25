@@ -1,0 +1,22 @@
+{
+  "name": "uni-plate-input",
+  "version": "1.0.0",
+  "description": "适配uni-app的车牌号输入组件",
+  "main": "/components/uni-plate-input/uni-plate-input.vue",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Next0186/uni-plate-input.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Next0186/uni-plate-input/issues"
+  },
+  "homepage": "https://github.com/Next0186/uni-plate-input#readme"
+}
