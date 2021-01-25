@@ -2,7 +2,7 @@
   "name": "uni-plate-input",
   "version": "1.0.0",
   "description": "适配uni-app的车牌号输入组件",
-  "main": "/components/uni-plate-input/uni-plate-input.vue",
+  "main": "components/uni-plate-input/uni-plate-input.vue",
   "directories": {
     "doc": "doc"
   },
