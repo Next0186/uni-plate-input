@@ -86,8 +86,9 @@
 		</view>
 	</view>
 </template>
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
 	name: 'uni-plate-input',
 	data() {
 		return {
@@ -184,7 +185,7 @@ export default {
 	},
 	methods: {
 		//车牌类型切换
-		typeChange(e) {
+		typeChange(e: any) {
 			const {value} = e.detail;
 			this.type = parseInt(value)
 			this.currentInputIndex = 0
@@ -194,11 +195,11 @@ export default {
 				this.currentInputValue = ['','','','','','','','']
 			}
 		},
-		inputSwitch(e) {
+		inputSwitch(e: any) {
 			const { index } = e.currentTarget.dataset;
 			this.currentInputIndex = parseInt(index);
 		},
-		chooseKey(e) {
+		chooseKey(e:any) {
 			const { value } = e.currentTarget.dataset;
 			this.$set(this.currentInputValue, this.currentInputIndex, value);
 			if(this.type==1 && this.currentInputIndex<6){
@@ -258,7 +259,7 @@ export default {
 			})
 		}, 500);
 	}
-};
+})
 </script>
 <style scoped lang="less">
 @import './uni-plate-input';
